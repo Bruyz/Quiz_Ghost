@@ -12,7 +12,7 @@
     <div class="col-md-4 text-center"> <strong> Resultado </strong> </div>
 </div>
 
-@for($i = 1; $i <= 10; $i++)
+@for($i = 1; $i <= 6; $i++)
     <div class="row">
         <div class="col-md-4 text-center"> {{$dados[$i]["gabarito"]}} </div>
         <div class="col-md-4 text-center"> {{$dados[$i]["resposta"]}} </div>

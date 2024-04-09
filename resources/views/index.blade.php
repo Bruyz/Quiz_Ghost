@@ -2,7 +2,7 @@
 @section('content')
 
     <div class ="jumbotron">
-        <p class ="h3 text-center py-4 ">Ghost Quiz</p>
+        <p class ="h3 text-center py-4 "><strong>Ghost Quiz</strong></p>
     </div>
      <div class ="row">
             <div class ="col-md-6 col-sm-6 text-center imagem">

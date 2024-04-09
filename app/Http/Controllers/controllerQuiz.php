@@ -22,10 +22,11 @@ class controllerQuiz extends Controller
         return view('pagina1');
     }
 
+
     public function dadosPagina1(Request $request){
-        $reposta = $request->input('pergunta');
+        $resposta = $request->input('pergunta');
         
-        session(['reposta1' =>$resposta]);
+        session(['resposta1' =>$resposta]);
 
         if(strcmp($this->perguntas['pergunta1'], $resposta) == 0){
             $acertos = session('acertos');
@@ -39,9 +40,9 @@ class controllerQuiz extends Controller
     }
 
     public function dadosPagina2(Request $request){
-        $reposta = $request->input('pergunta');
+        $resposta = $request->input('pergunta');
         
-        session(['reposta2' =>$resposta]);
+        session(['resposta2' =>$resposta]);
 
         if(strcmp($this->perguntas['pergunta2'], $resposta) == 0){
             $acertos = session('acertos');
@@ -55,9 +56,9 @@ class controllerQuiz extends Controller
     }
 
     public function dadosPagina3(Request $request){
-        $reposta = $request->input('pergunta');
+        $resposta = $request->input('pergunta');
         
-        session(['reposta3' =>$resposta]);
+        session(['resposta3' =>$resposta]);
 
         if(strcmp($this->perguntas['pergunta3'], $resposta) == 0){
             $acertos = session('acertos');
@@ -71,9 +72,9 @@ class controllerQuiz extends Controller
     }
 
     public function dadosPagina4(Request $request){
-        $reposta = $request->input('pergunta');
+        $resposta = $request->input('pergunta');
         
-        session(['reposta4' =>$resposta]);
+        session(['resposta4' =>$resposta]);
 
         if(strcmp($this->perguntas['pergunta4'], $resposta) == 0){
             $acertos = session('acertos');
@@ -87,9 +88,9 @@ class controllerQuiz extends Controller
     }
 
     public function dadosPagina5(Request $request){
-        $reposta = $request->input('pergunta');
+        $resposta = $request->input('pergunta');
         
-        session(['reposta5' =>$resposta]);
+        session(['resposta5' =>$resposta]);
 
         if(strcmp($this->perguntas['pergunta5'], $resposta) == 0){
             $acertos = session('acertos');
@@ -103,9 +104,9 @@ class controllerQuiz extends Controller
     }
 
     public function dadosPagina6(Request $request){
-        $reposta = $request->input('pergunta');
+        $resposta = $request->input('pergunta');
         
-        session(['reposta6' =>$resposta]);
+        session(['resposta6' =>$resposta]);
 
         if(strcmp($this->perguntas['pergunta6'], $resposta) == 0){
             $acertos = session('acertos');
